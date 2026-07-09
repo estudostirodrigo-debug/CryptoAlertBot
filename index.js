@@ -14,7 +14,7 @@ const registerStartCommand = require("./commands/start");
 const registerHelpCommand = require("./commands/help");
 const registerBTCCommand = require("./commands/btc");
 const registerVolumeCommand = require("./commands/volume");
-
+const registerWhalesCommand = require("./commands/whales");
 // Obtém o token do .env
 const token = process.env.BOT_TOKEN;
 
@@ -49,6 +49,7 @@ registerStartCommand(bot);
 registerHelpCommand(bot);
 registerBTCCommand(bot);
 registerVolumeCommand(bot);
+registerWhalesCommand(bot);
 // ============================
 
 console.log("🚀 CryptoAlertBrasilBot iniciado com sucesso!");
